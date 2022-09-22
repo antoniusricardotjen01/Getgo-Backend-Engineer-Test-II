@@ -1,0 +1,13 @@
+C:\Users\user\Documents\Ricardo\Important Documents\Companies\Interview\Kiri-Getgo\Getgo-Backend-Engineer-Test\testing\testing\bin\Debug\netcoreapp3.1\testing.exe
+C:\Users\user\Documents\Ricardo\Important Documents\Companies\Interview\Kiri-Getgo\Getgo-Backend-Engineer-Test\testing\testing\bin\Debug\netcoreapp3.1\testing.deps.json
+C:\Users\user\Documents\Ricardo\Important Documents\Companies\Interview\Kiri-Getgo\Getgo-Backend-Engineer-Test\testing\testing\bin\Debug\netcoreapp3.1\testing.runtimeconfig.json
+C:\Users\user\Documents\Ricardo\Important Documents\Companies\Interview\Kiri-Getgo\Getgo-Backend-Engineer-Test\testing\testing\bin\Debug\netcoreapp3.1\testing.runtimeconfig.dev.json
+C:\Users\user\Documents\Ricardo\Important Documents\Companies\Interview\Kiri-Getgo\Getgo-Backend-Engineer-Test\testing\testing\bin\Debug\netcoreapp3.1\testing.dll
+C:\Users\user\Documents\Ricardo\Important Documents\Companies\Interview\Kiri-Getgo\Getgo-Backend-Engineer-Test\testing\testing\bin\Debug\netcoreapp3.1\testing.pdb
+C:\Users\user\Documents\Ricardo\Important Documents\Companies\Interview\Kiri-Getgo\Getgo-Backend-Engineer-Test\testing\testing\obj\Debug\netcoreapp3.1\testing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\Ricardo\Important Documents\Companies\Interview\Kiri-Getgo\Getgo-Backend-Engineer-Test\testing\testing\obj\Debug\netcoreapp3.1\testing.AssemblyInfoInputs.cache
+C:\Users\user\Documents\Ricardo\Important Documents\Companies\Interview\Kiri-Getgo\Getgo-Backend-Engineer-Test\testing\testing\obj\Debug\netcoreapp3.1\testing.AssemblyInfo.cs
+C:\Users\user\Documents\Ricardo\Important Documents\Companies\Interview\Kiri-Getgo\Getgo-Backend-Engineer-Test\testing\testing\obj\Debug\netcoreapp3.1\testing.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Ricardo\Important Documents\Companies\Interview\Kiri-Getgo\Getgo-Backend-Engineer-Test\testing\testing\obj\Debug\netcoreapp3.1\testing.dll
+C:\Users\user\Documents\Ricardo\Important Documents\Companies\Interview\Kiri-Getgo\Getgo-Backend-Engineer-Test\testing\testing\obj\Debug\netcoreapp3.1\testing.pdb
+C:\Users\user\Documents\Ricardo\Important Documents\Companies\Interview\Kiri-Getgo\Getgo-Backend-Engineer-Test\testing\testing\obj\Debug\netcoreapp3.1\testing.genruntimeconfig.cache

@@ -7,6 +7,7 @@ using CarSharingBooking.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Moq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,51 +28,52 @@ namespace CarSharingBooking.Controllers
 
         [HttpGet]
         [Route("Car")]
-        public IActionResult GetCarDetails()
+        [AllowAnonymous]
+        public ActionResult<List<CarDTO>> GetCarDetails()
         {
             List<CarDTO> result = new List<CarDTO>();
-            _carBusinessFacade.GetAllCarDetails().ToList().ForEach(t => result.Add(DTOMapper.ConvertToCarDTO(t)));
+            _carBusinessFacade.GetAllCarDetails().ToList().ForEach(t => result.Add(CommonUtility.ConvertToCarDTO(t)));
             if (result.Count <= 0)
             {
                 return NotFound();
             }
-            return Ok(result);
+            return result;
         }
 
         [HttpGet]
         [Route("Search")]
-        public IActionResult SearchCar([FromQuery] SearchCar param)
+        public ActionResult<List<CarDTO>> SearchCar([FromQuery] SearchCar param)
         {
             List<CarDTO> result = new List<CarDTO>();
             _carBusinessFacade.SearchCar(param.CoordinateX, param.CoordinateY).ToList().
-                ForEach(t=> result.Add(DTOMapper.ConvertToCarDTO(t)));
+                ForEach(t=> result.Add(CommonUtility.ConvertToCarDTO(t)));
             if (result.Count <= 0)
             {
                 return NotFound();
             }
-            return Ok(result);
+            return result;
         }
 
         [HttpPost]
         [Route("Book")]
-        public IActionResult BookCar([FromBody] BookCar param)
+        public ActionResult<bool> BookCar([FromForm] BookCar param)
         {
-            if (!_carBusinessFacade.BookCar(param.CoordinateX, param.CoordinateY, param.Username))
+            if (!_carBusinessFacade.BookCar(param.CoordinateX, param.CoordinateY, CommonUtility.SanitizeStringParameter(param.Username)))
             {
                 return BadRequest();
             }
-            return Ok();
+            return true;
         }
 
         [HttpPost]
         [Route("Finish")]
-        public IActionResult ReachCar([FromBody] ReachCar param)
+        public ActionResult<bool> ReachCar([FromForm] ReachCar param)
         {
             if (!_carBusinessFacade.ReachCar(param.CarID))
             {
                 return BadRequest();
             }
-            return Ok();
+            return true;
         }
     }
 }

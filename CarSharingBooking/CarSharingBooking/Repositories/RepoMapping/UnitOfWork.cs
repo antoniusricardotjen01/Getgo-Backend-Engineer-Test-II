@@ -31,7 +31,6 @@ namespace CarSharingBooking.Repositories.Interface
             {
                 try
                 {
-                    _context.SaveChanges();
                     dbContextTransaction.Commit();
                     result = true;
                 }

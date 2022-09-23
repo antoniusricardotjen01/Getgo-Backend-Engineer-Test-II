@@ -1,0 +1,1 @@
+C:\Users\user\Documents\Ricardo\Important Documents\Companies\Interview\Kiri-Getgo\Getgo-Backend-Engineer-Test\CarSharingBooking\.vs\CarSharingBooking\v16\lut\0\i\CarSharingBookingTests\Debug\netcoreapp3.1\CarSharingBookingTests.GeneratedMSBuildEditorConfig.editorconfig
